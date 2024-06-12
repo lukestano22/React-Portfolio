@@ -1,17 +1,18 @@
 .wrapper{
 
-
+  display: flex;
+  flex-direction: column;
 }
 .header{
 
   background-color: blue;
-
+  
 }
 .content{
 
-
+  background-color:#F8F8FF;
 }
 .footer{
 
-
+  background-color: #808080;
 }
