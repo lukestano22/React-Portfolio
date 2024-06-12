@@ -1,9 +1,9 @@
 import { useState } from "react"
-//hooks
-const[Photo, setPhoto] = useState('');
-const[Bio,setBio] = useState('');
 //AboutMe XML
 export default function AboutMe(){
+    //hooks
+    const[Photo, setPhoto] = useState('');
+    const[Bio,setBio] = useState('');
     return(<>
     <div className="About-Me"><h3>About Me</h3></div>
     <div id="Photo">

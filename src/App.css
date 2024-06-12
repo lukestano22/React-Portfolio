@@ -6,13 +6,15 @@
 .header{
 
   background-color: blue;
-  
+  display: flex;
+  padding-bottom: 0%;
 }
 .content{
 
   background-color:#F8F8FF;
+  padding-bottom: 40%;
 }
 .footer{
-
+ 
   background-color: #808080;
 }

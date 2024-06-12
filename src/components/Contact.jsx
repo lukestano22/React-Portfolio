@@ -1,6 +1,8 @@
 //importing useState
 import { useState } from "react";
-//useState hook to hold data from contact information
+//function
+export default function Contact(){
+  //useState hook to hold data from contact information
 const[Name, setName] = useState('Paul');
 const[Email, setEmail] = useState('paul_bilbatua@hotmail.com');
 const[Message, setMessage] = useState('');
@@ -11,10 +13,8 @@ console.log('Name',Name);
 console.log('Email', Email);
 console.log('Message',Message);
 }
-//function
-export default function Contact(){
 return(<>
-    <form onSubmit={handling}>
+    <form onSubmit={handling()}>
       <div>
         <label>Name:</label>
         <input type="text" value={Name} onChange={(e)=>setName(e.target.value)}></input>
