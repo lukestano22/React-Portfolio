@@ -4,11 +4,17 @@ import { useState } from "react";
 const[Name, setName] = useState('Paul');
 const[Email, setEmail] = useState('paul_bilbatua@hotmail.com');
 const[Message, setMessage] = useState('');
-//handler to avoid any issues when sending form
+//event handling in case something goes wrong when submiting form
+const handling = function (event){
+event.preventDefault();
+console.log('Name',Name);
+console.log('Email', Email);
+console.log('Message',Message);
+}
 //function
 export default function Contact(){
 return(<>
-    <form>
+    <form onSubmit={handling}>
       <div>
         <label>Name:</label>
         <input type="text" value={Name} onChange={(e)=>setName(e.target.value)}></input>
@@ -19,7 +25,7 @@ return(<>
         </div>
         <div>
         <label>Message:</label>
-        <input type="text" value={Message} onChange={(e)=>setMessage(e.target.value)}></input>
+        <textarea type="text" value={Message} onChange={(e)=>setMessage(e.target.value)}></textarea>
         </div>
             <button type="submit">Submit</button>
     </form>

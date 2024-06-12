@@ -22,7 +22,7 @@ function App() {
         </ul>
       </div>
       <div className='content'>
-
+          
       </div>
       <div className='footer'>
 
