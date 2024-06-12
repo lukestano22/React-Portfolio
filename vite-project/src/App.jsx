@@ -6,12 +6,13 @@ import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import './App.css'
-//use state for current tab
- const [Tab, setTab] = useState('AboutMe')
 function App() {
+  //use state for current tab
+ const [Tab, setTab] = useState(0)
   //content variable to store content from each component
   let content;
 // conditional statements
+function Tabs(){
   if(Tab === '/AboutMe'){
     content = <AboutMe/>
   } else if(Tab === '/Contact'){
@@ -21,6 +22,7 @@ function App() {
   } else{
     content = <Resume/>
   }
+}
   return(<>
 <div className='wrapper'>
       <div className='header'>
@@ -32,10 +34,12 @@ function App() {
         </ul>
       </div>
       <div className='content'>
-          
+        {Tabs()}
       </div>
       <div className='footer'>
-
+      <img src=''></img>
+      <img src=''></img>
+      <img src=''></img>
       </div>
     </div>
   </>)
