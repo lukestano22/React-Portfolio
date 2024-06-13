@@ -6,7 +6,7 @@ export default function AboutMe(){
     const[Bio,setBio] = useState('');
     return(<>
     <div className="About-Me"><h3>About Me</h3></div>
-    <div id="Photo">
+    <div id="Photo-Me">
         <img src="https://media.istockphoto.com/id/1337144146/vector/default-avatar-profile-icon-vector.jpg?s=612x612&w=0&k=20&c=BIbFwuv7FxTWvh5S3vB6bkT0Qv8Vn8N5Ffseq84ClGI=" 
         alt="avatar"
         width={100 + 'px'}

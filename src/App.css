@@ -85,6 +85,16 @@ footer{
 #L{
   margin-right: 4%;
 }
+/*About Me section*/
+.About-Me{
+  text-align: center;
+}
+#Photo-Me{
+  text-align: center;
+}
+.paragraph{
+  text-align: center;
+}
 /*portfolio section*/
 #port-title{
   text-align: center;
@@ -97,6 +107,12 @@ footer{
   justify-content: center;
 }
 .Project-1{
+  margin-right: 3%;
+}
+.Project-2{
+  margin-right: 3%;
+}
+.Project-3{
   margin-right: 3%;
 }
 /*button hovers*/
