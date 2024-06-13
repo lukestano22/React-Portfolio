@@ -9,40 +9,43 @@ import './App.css'
 function App() {
   //use state for current tab
  const [Tab, setTab] = useState(0)
-  //content variable to store content from each component
-  let content;
 // conditional statements
 function Tabs(){
-  if(Tab === '/AboutMe'){
-    content = <AboutMe/>
-  } else if(Tab === '/Contact'){
-    content = <Contact/>
-  } else if(Tab === '/Portfolio'){
-    content = <Portfolio/>
-  } else{
-    content = <Resume/>
-  }
+  if(Tab === 'AboutMe'){
+    return <AboutMe/>
+  } else if(Tab === 'Contact'){
+    return <Contact/>
+  } else if(Tab === 'Portfolio'){
+    return <Portfolio/>
+  } 
+    return <Resume/>
+  
 }
   return(<>
 <div className='wrapper'>
-      <div className='header'>
-        <ul>
-        <li><button onClick={()=> setTab('AboutMe')}>About Me</button></li>
-        <li><button onClick={()=> setTab('Contact')}>Contact</button></li>
-        <li><button onClick={()=> setTab('Portfolio')}>Portfolio</button></li>
-        <li><button onClick={()=> setTab('Resume')}>Resume</button></li>
+      <header>
+        <ul className='nav-list'>
+        <li id='One'><button id='AM' onClick={()=> setTab('AboutMe')}>About Me</button></li>
+        <li id='Two'><button id='C' onClick={()=> setTab('Contact')}>Contact</button></li>
+        <li id='Three'><button id='P' onClick={()=> setTab('Portfolio')}>Portfolio</button></li>
+        <li id='Fourth'><button id='R' onClick={()=> setTab('Resume')}>Resume</button></li>
         </ul>
-      </div>
+      </header>
       <div className='content'>
         {Tabs()}
       </div>
-      <div className='footer'>
-      <img src=''></img>
-      <img src=''></img>
-      <img src=''></img>
-      </div>
+      <footer>
+      <svg width={100 + 'px'} xmlns='https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg'></svg>
+      <svg style={{"width": 100 + 'px'}} xmlns='https://www.svgrepo.com/show/922/linkedin.svg'></svg>
+      <svg style={{"width": 100 + 'px'}} xmlns='https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg'></svg>
+      </footer>
     </div>
   </>)
 }
 
 export default App
+/*
+ <img src ="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt='github icon' width={em}/>
+      <img src="https://www.svgrepo.com/show/922/linkedin.svg" alt='linkedlin icon' />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg" alt='stackOverFlow icon'  />
+*/
