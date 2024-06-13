@@ -115,6 +115,31 @@ footer{
 .Project-3{
   margin-right: 3%;
 }
+/*Contact*/
+.form{
+  border: 5px solid black;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  left: 45%;
+  margin-top: 15%;
+  padding: 3%;
+}
+.Name{
+margin-bottom: 2%;
+}
+.Email{
+margin-bottom: 2%;
+}
+.Message{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+#TM{
+  position: relative;
+  right: 3px;
+}
 /*button hovers*/
 #AM:hover{
   text-decoration: underline;

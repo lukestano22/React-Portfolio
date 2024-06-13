@@ -14,7 +14,8 @@ export default function AboutMe(){
         ></img>
     </div>
     <div className="paragraph">
-        <p>Hello everyone, my name is Paul Bilbatua</p>
+        <p>Hello everyone, my name is Paul Bilbatua and I am looking to become a full stack developer, and I applied the most used technologies to create my projects
+        in my projects posted here on this section, so everyone can take a llok about what I had accomplished during my coding journey using both front and back end tecnologies</p>
     </div>
     </>)
 }

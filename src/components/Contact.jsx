@@ -7,27 +7,29 @@ const[Name, setName] = useState('Paul');
 const[Email, setEmail] = useState('paul_bilbatua@hotmail.com');
 const[Message, setMessage] = useState('');
 //event handling in case something goes wrong when submiting form
-const handling = function (event){
-event.preventDefault();
+const handling = function (e){
+//e.preventDefault();
 console.log('Name',Name);
 console.log('Email', Email);
 console.log('Message',Message);
 }
 return(<>
-    <form onSubmit={handling()}>
-      <div>
+    <form className="form" onSubmit={handling()}>
+      <div className="Name">
         <label>Name:</label>
         <input type="text" value={Name} onChange={(e)=>setName(e.target.value)}></input>
         </div>
-        <div>
+        <div className="Email">
         <label>Email:</label>
         <input type="text" value={Email} onChange={(e)=>setEmail(e.target.value)}></input>
         </div>
-        <div>
-        <label>Message:</label>
+        <div className="Message">
+        <label id="TM">Message:</label>
         <textarea type="text" value={Message} onChange={(e)=>setMessage(e.target.value)}></textarea>
         </div>
+        <div id="submit">
             <button type="submit">Submit</button>
+            </div>
     </form>
 </>)
 }
