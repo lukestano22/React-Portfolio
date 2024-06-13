@@ -3,11 +3,11 @@ import React from "react";
 export default function Resume(){
     return(<>
     <div>
-        <h5>Resume</h5>
+        <h2>Resume</h2>
         <p>Download my resume</p>
     </div>
     <div className="front-end">
-        <h5>Front End Proficiencies</h5>
+        <h2>Front End Proficiencies</h2>
         <ol>
             <li>HTML</li>
             <li>CSS</li>
@@ -17,7 +17,7 @@ export default function Resume(){
         </ol>
     </div>
     <div className="Back-end">
-        <h5>Back End Proficiencies</h5>
+        <h2>Back End Proficiencies</h2>
         <ol>
             <li>Node.js</li>
             <li>APIs</li>

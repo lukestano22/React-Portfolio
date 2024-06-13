@@ -85,17 +85,35 @@ footer{
 #L{
   margin-right: 4%;
 }
-
+/*portfolio section*/
+#port-title{
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  font-size: 40px;
+}
+.projects{
+  display: flex;
+  justify-content: center;
+}
+.Project-1{
+  margin-right: 3%;
+}
 /*button hovers*/
 #AM:hover{
   text-decoration: underline;
 }
-#C{
+#C:hover{
   text-decoration: underline;
 }
-#P{
+#P:hover{
   text-decoration: underline;
 }
-#R{
+#R:hover{
   text-decoration: underline;
+}
+/*portfolio*/
+.Project-1:hover{
+  background-color: #808080;
+
 }

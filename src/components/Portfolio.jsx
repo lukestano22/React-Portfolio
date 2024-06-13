@@ -7,20 +7,27 @@ return(<>
 <div className="projects">
     <div className="Project-1">
     <div className="image1">
-        <img src="https://www.istockphoto.com/vector/calculator-gm531633071-55229528?searchscope=image%2Cfilm" alt="Calculator"></img>
+        <img src="https://cdn.ttgtmedia.com/rms/onlineimages/Math_programming_calc_figure_2_half_column_mobile.jpg" alt="Calculator" width={180 + 'px'} height={180 + 'px'}></img>
     </div>
     </div>
     <div className="Project-2">
     <div className="image2">
-        <img src="https://play-lh.googleusercontent.com/Y3RjFoyrPzj9KSs1vPXvmxmS7Fm88Nb1ej0E2LFFTs64OuMyI7mkMSHqrS0htFsUuO0=w240-h480-rw" alt=""></img>
+        <img src="https://play-lh.googleusercontent.com/Y3RjFoyrPzj9KSs1vPXvmxmS7Fm88Nb1ej0E2LFFTs64OuMyI7mkMSHqrS0htFsUuO0=w240-h480-rw" alt="ChatApp" width={180 + 'px'} height={180 + 'px'}></img>
     </div>
     </div>
     <div className="Project-3">
     <div className="image3">
-        <img src=""></img>
-    </div>
+        <img src="https://cdn-icons-png.freepik.com/512/7477/7477790.png" alt="weather" width={190 + 'px'} height={190 + 'px'}></img>
     </div>
     
+    </div>
+    <div className="Project-4">
+    <div className="image4">
+        <img src="https://static.wixstatic.com/media/e4256a_08ecd1c0638b418cb33cbd99e6e3d76b~mv2.png" alt="Music" width={180 + 'px'} height={180 + 'px'}></img>
+    </div>
+    
+    </div>
+
 </div>
 </>);
 }
