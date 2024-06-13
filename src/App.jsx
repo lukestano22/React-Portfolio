@@ -35,9 +35,9 @@ function Tabs(){
         {Tabs()}
       </div>
       <footer>
-      <svg width={100 + 'px'} xmlns='https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg'></svg>
-      <svg style={{"width": 100 + 'px'}} xmlns='https://www.svgrepo.com/show/922/linkedin.svg'></svg>
-      <svg style={{"width": 100 + 'px'}} xmlns='https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg'></svg>
+      <img id='G' width={50 + 'px'} height={50 + 'px'} src='https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg' alt='github logo'></img>
+      <img id='L' width={50 + 'px'} height={50 + 'px'} src='https://www.svgrepo.com/show/922/linkedin.svg' alt='linkedlin logo'></img>
+      <img id='S' width={50 + 'px'} height={50 + 'px'} src='https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg' alt='stackoverflow'></img>
       </footer>
     </div>
   </>)

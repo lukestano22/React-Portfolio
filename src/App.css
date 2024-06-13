@@ -76,6 +76,14 @@ footer{
  
   background-color: #808080;
   padding: 3%;
+  display: flex;
+  justify-content: center;
+}
+#G{
+  margin-right: 4%;
+}
+#L{
+  margin-right: 4%;
 }
 
 /*button hovers*/
