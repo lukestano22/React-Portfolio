@@ -1,8 +1,40 @@
-# React + Vite
+# Paul Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Description
+The purpose of this challenge is to create a portfolio application will be deployed on netlify.
 
-Currently, two official plugins are available:
+# Table Of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    1.- installation
+
+    2.- Usage
+
+    3.- collaboration
+
+    4.- screenshot
+
+    5.- deployment
+
+# Installation
+
+    N/A
+
+# Usage
+
+    This application is only visible using a browser by accessing directly to the link provided on the deployment section from this readme file
+
+# Collaboration
+
+    N/A
+
+# Screenshot
+
+    Screenshot:
+
+# Deployment
+
+    Netlify: https://enchanting-zabaione-02ee4d.netlify.app/
+
+# GitHub Repository
+
+    GitHub Repository: https://github.com/Paul449/PAUB-portReact-222
