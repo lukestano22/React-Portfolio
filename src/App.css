@@ -108,12 +108,22 @@ footer{
 }
 .Project-1{
   margin-right: 3%;
+  
 }
 .Project-2{
   margin-right: 3%;
 }
 .Project-3{
   margin-right: 3%;
+}
+.Project-1 p{
+  visibility: hidden;
+}
+.Project-2 p{
+  visibility: hidden;
+}
+.Project-3 p{
+  visibility: hidden;
 }
 /*Contact*/
 .form{
@@ -154,7 +164,19 @@ margin-bottom: 2%;
   text-decoration: underline;
 }
 /*portfolio*/
-.Project-1:hover{
+.Project-1:hover p{
   background-color: #808080;
-
+  visibility: visible;
+}
+.Project-2:hover p{
+  background-color: #808080;
+  visibility: visible;
+}
+.Project-3:hover p{
+  background-color: #808080;
+  visibility: visible;
+}
+.Project-4:hover p{
+  background-color: #808080;
+  visibility: visible;
 }
