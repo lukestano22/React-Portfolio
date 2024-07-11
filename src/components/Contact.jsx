@@ -1,35 +1,52 @@
-//importing useState
 import { useState } from "react";
-//function
-export default function Contact(){
-  //useState hook to hold data from contact information
-const[Name, setName] = useState('Paul');
-const[Email, setEmail] = useState('paul_bilbatua@hotmail.com');
-const[Message, setMessage] = useState('');
-//event handling in case something goes wrong when submiting form
-const handling = function (e){
-//e.preventDefault();
-console.log('Name',Name);
-console.log('Email', Email);
-console.log('Message',Message);
-}
-return(<>
-    <form className="form" onSubmit={handling()}>
-      <div className="Name">
-        <label>Name:</label>
-        <input type="text" value={Name} onChange={(e)=>setName(e.target.value)}></input>
-        </div>
-        <div className="Email">
-        <label>Email:</label>
-        <input type="text" value={Email} onChange={(e)=>setEmail(e.target.value)}></input>
-        </div>
-        <div className="Message">
-        <label id="TM">Message:</label>
-        <textarea type="text" value={Message} onChange={(e)=>setMessage(e.target.value)}></textarea>
-        </div>
-        <div id="submit">
-            <button type="submit">Submit</button>
-            </div>
+
+export default function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Message:', message);
+  };
+
+  return (
+    <form className="form" onSubmit={handleSubmit}>
+      <h2>Contact Me</h2>
+      <div className="form-group">
+        <label htmlFor="name">Name:</label>
+        <input
+          id="name"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="message">Message:</label>
+        <textarea
+          id="message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          required
+        />
+      </div>
+      <div className="form-group">
+        <button type="submit">Submit</button>
+      </div>
     </form>
-</>)
+  );
 }
