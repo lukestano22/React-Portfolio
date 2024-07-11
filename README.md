@@ -21,3 +21,4 @@ This project is a personal portfolio built using React. It showcases various pro
 <img width="1437" alt="Screenshot 2024-07-11 at 1 38 54 PM" src="https://github.com/lukestano22/React-Portfolio/assets/147096339/65dc8fa9-951e-4396-a98d-6958e56ba61e">
 
 ## App deployed
+https://6690497fa724ef57dd186b73--vocal-platypus-9c26c4.netlify.app/
